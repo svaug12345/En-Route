@@ -1,0 +1,366 @@
+{
+  "version": 1,
+  "description": "Bruitage : ce qu'il faut faire deviner uniquement avec des sons.",
+  "cartes": [
+    {
+      "id": "bru001",
+      "actif": true,
+      "niveau": 1,
+      "texte": "Un chat qui réclame à manger"
+    },
+    {
+      "id": "bru002",
+      "actif": true,
+      "niveau": 1,
+      "texte": "Une poule qui vient de pondre"
+    },
+    {
+      "id": "bru003",
+      "actif": true,
+      "niveau": 1,
+      "texte": "Un chien qui aboie au facteur"
+    },
+    {
+      "id": "bru004",
+      "actif": true,
+      "niveau": 1,
+      "texte": "Un bébé qui pleure"
+    },
+    {
+      "id": "bru005",
+      "actif": true,
+      "niveau": 1,
+      "texte": "Une sirène de pompiers"
+    },
+    {
+      "id": "bru006",
+      "actif": true,
+      "niveau": 1,
+      "texte": "Un train qui démarre"
+    },
+    {
+      "id": "bru007",
+      "actif": true,
+      "niveau": 1,
+      "texte": "Une goutte qui tombe d'un robinet"
+    },
+    {
+      "id": "bru008",
+      "actif": true,
+      "niveau": 1,
+      "texte": "Un éternuement"
+    },
+    {
+      "id": "bru009",
+      "actif": true,
+      "niveau": 1,
+      "texte": "Un moustique dans la chambre"
+    },
+    {
+      "id": "bru010",
+      "actif": true,
+      "niveau": 1,
+      "texte": "Un ballon qui se dégonfle"
+    },
+    {
+      "id": "bru011",
+      "actif": true,
+      "niveau": 1,
+      "texte": "Une vache dans un pré"
+    },
+    {
+      "id": "bru012",
+      "actif": true,
+      "niveau": 1,
+      "texte": "Un coq au lever du soleil"
+    },
+    {
+      "id": "bru013",
+      "actif": true,
+      "niveau": 1,
+      "texte": "Un serpent qui siffle"
+    },
+    {
+      "id": "bru014",
+      "actif": true,
+      "niveau": 1,
+      "texte": "Un cheval au galop"
+    },
+    {
+      "id": "bru015",
+      "actif": true,
+      "niveau": 1,
+      "texte": "Un canard dans une mare"
+    },
+    {
+      "id": "bru016",
+      "actif": true,
+      "niveau": 1,
+      "texte": "Quelqu'un qui ronfle"
+    },
+    {
+      "id": "bru017",
+      "actif": true,
+      "niveau": 1,
+      "texte": "Une voiture de course"
+    },
+    {
+      "id": "bru018",
+      "actif": true,
+      "niveau": 1,
+      "texte": "Un fantôme"
+    },
+    {
+      "id": "bru019",
+      "actif": true,
+      "niveau": 1,
+      "texte": "Un lion qui rugit"
+    },
+    {
+      "id": "bru020",
+      "actif": true,
+      "niveau": 1,
+      "texte": "Quelqu'un qui a très froid"
+    },
+    {
+      "id": "bru021",
+      "actif": true,
+      "niveau": 2,
+      "texte": "Quelqu'un qui croque une pomme"
+    },
+    {
+      "id": "bru022",
+      "actif": true,
+      "niveau": 2,
+      "texte": "Une porte qui grince"
+    },
+    {
+      "id": "bru023",
+      "actif": true,
+      "niveau": 2,
+      "texte": "Un micro-ondes qui termine"
+    },
+    {
+      "id": "bru024",
+      "actif": true,
+      "niveau": 2,
+      "texte": "Une moto qui passe vite"
+    },
+    {
+      "id": "bru025",
+      "actif": true,
+      "niveau": 2,
+      "texte": "Un téléphone en mode vibreur"
+    },
+    {
+      "id": "bru026",
+      "actif": true,
+      "niveau": 2,
+      "texte": "Du popcorn qui éclate"
+    },
+    {
+      "id": "bru027",
+      "actif": true,
+      "niveau": 2,
+      "texte": "Un loup qui hurle à la lune"
+    },
+    {
+      "id": "bru028",
+      "actif": true,
+      "niveau": 2,
+      "texte": "La fin d'un verre bu avec une paille"
+    },
+    {
+      "id": "bru029",
+      "actif": true,
+      "niveau": 2,
+      "texte": "Un lave-linge qui essore"
+    },
+    {
+      "id": "bru030",
+      "actif": true,
+      "niveau": 2,
+      "texte": "Une fusée qui décolle"
+    },
+    {
+      "id": "bru031",
+      "actif": true,
+      "niveau": 2,
+      "texte": "Un hélicoptère"
+    },
+    {
+      "id": "bru032",
+      "actif": true,
+      "niveau": 2,
+      "texte": "Une cocotte-minute"
+    },
+    {
+      "id": "bru033",
+      "actif": true,
+      "niveau": 2,
+      "texte": "Un orage qui gronde"
+    },
+    {
+      "id": "bru034",
+      "actif": true,
+      "niveau": 2,
+      "texte": "Une sonnette de vélo"
+    },
+    {
+      "id": "bru035",
+      "actif": true,
+      "niveau": 2,
+      "texte": "Quelqu'un qui souffle les bougies"
+    },
+    {
+      "id": "bru036",
+      "actif": true,
+      "niveau": 2,
+      "texte": "Un aspirateur"
+    },
+    {
+      "id": "bru037",
+      "actif": true,
+      "niveau": 2,
+      "texte": "Un singe qui a trouvé une banane"
+    },
+    {
+      "id": "bru038",
+      "actif": true,
+      "niveau": 2,
+      "texte": "Une bouteille de soda qu'on ouvre"
+    },
+    {
+      "id": "bru039",
+      "actif": true,
+      "niveau": 2,
+      "texte": "Des pas dans la neige"
+    },
+    {
+      "id": "bru040",
+      "actif": true,
+      "niveau": 2,
+      "texte": "Une chouette la nuit"
+    },
+    {
+      "id": "bru041",
+      "actif": true,
+      "niveau": 3,
+      "texte": "Un dinosaure qui a le hoquet"
+    },
+    {
+      "id": "bru042",
+      "actif": true,
+      "niveau": 3,
+      "texte": "Un robot qui tombe en panne"
+    },
+    {
+      "id": "bru043",
+      "actif": true,
+      "niveau": 3,
+      "texte": "Un pingouin qui glisse sur la banquise"
+    },
+    {
+      "id": "bru044",
+      "actif": true,
+      "niveau": 3,
+      "texte": "Un orage qui s'approche puis s'éloigne"
+    },
+    {
+      "id": "bru045",
+      "actif": true,
+      "niveau": 3,
+      "texte": "Un fantôme timide"
+    },
+    {
+      "id": "bru046",
+      "actif": true,
+      "niveau": 3,
+      "texte": "Quelqu'un qui marche dans la boue"
+    },
+    {
+      "id": "bru047",
+      "actif": true,
+      "niveau": 3,
+      "texte": "Une imprimante qui bourre"
+    },
+    {
+      "id": "bru048",
+      "actif": true,
+      "niveau": 3,
+      "texte": "Un vieux modem Internet"
+    },
+    {
+      "id": "bru049",
+      "actif": true,
+      "niveau": 3,
+      "texte": "Une baleine qui chante"
+    },
+    {
+      "id": "bru050",
+      "actif": true,
+      "niveau": 3,
+      "texte": "Un manège à la fête foraine"
+    },
+    {
+      "id": "bru051",
+      "actif": true,
+      "niveau": 3,
+      "texte": "Un zombie qui a faim"
+    },
+    {
+      "id": "bru052",
+      "actif": true,
+      "niveau": 3,
+      "texte": "Une tondeuse qui ne veut pas démarrer"
+    },
+    {
+      "id": "bru053",
+      "actif": true,
+      "niveau": 3,
+      "texte": "Un extraterrestre qui atterrit"
+    },
+    {
+      "id": "bru054",
+      "actif": true,
+      "niveau": 3,
+      "texte": "Un feu de cheminée"
+    },
+    {
+      "id": "bru055",
+      "actif": true,
+      "niveau": 3,
+      "texte": "Une machine à café le matin"
+    },
+    {
+      "id": "bru056",
+      "actif": true,
+      "niveau": 3,
+      "texte": "Un dauphin qui fait un spectacle"
+    },
+    {
+      "id": "bru057",
+      "actif": true,
+      "niveau": 3,
+      "texte": "Un chewing-gum qui éclate"
+    },
+    {
+      "id": "bru058",
+      "actif": true,
+      "niveau": 3,
+      "texte": "Le réveil du lundi matin"
+    },
+    {
+      "id": "bru059",
+      "actif": true,
+      "niveau": 3,
+      "texte": "La voiture qui démarre en hiver"
+    },
+    {
+      "id": "bru060",
+      "actif": true,
+      "niveau": 3,
+      "texte": "Une poule qui voit un renard"
+    }
+  ]
+}

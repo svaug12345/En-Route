@@ -1,0 +1,618 @@
+{
+  "version": 1,
+  "description": "Trois mots interdits : mot à faire deviner, 3 interdits, 1 bonus (mode handicap).",
+  "cartes": [
+    {
+      "id": "mot001",
+      "actif": true,
+      "niveau": 1,
+      "mot": "Chien",
+      "interdits": [
+        "aboyer",
+        "os",
+        "niche"
+      ],
+      "bonus": "laisse"
+    },
+    {
+      "id": "mot002",
+      "actif": true,
+      "niveau": 1,
+      "mot": "Pizza",
+      "interdits": [
+        "Italie",
+        "fromage",
+        "four"
+      ],
+      "bonus": "tomate"
+    },
+    {
+      "id": "mot003",
+      "actif": true,
+      "niveau": 1,
+      "mot": "Plage",
+      "interdits": [
+        "sable",
+        "mer",
+        "serviette"
+      ],
+      "bonus": "vacances"
+    },
+    {
+      "id": "mot004",
+      "actif": true,
+      "niveau": 1,
+      "mot": "Noël",
+      "interdits": [
+        "sapin",
+        "cadeaux",
+        "père"
+      ],
+      "bonus": "décembre"
+    },
+    {
+      "id": "mot005",
+      "actif": true,
+      "niveau": 1,
+      "mot": "Vélo",
+      "interdits": [
+        "pédales",
+        "roues",
+        "rouler"
+      ],
+      "bonus": "casque"
+    },
+    {
+      "id": "mot006",
+      "actif": true,
+      "niveau": 1,
+      "mot": "Glace",
+      "interdits": [
+        "froid",
+        "cornet",
+        "parfum"
+      ],
+      "bonus": "été"
+    },
+    {
+      "id": "mot007",
+      "actif": true,
+      "niveau": 1,
+      "mot": "Pirate",
+      "interdits": [
+        "bateau",
+        "trésor",
+        "perroquet"
+      ],
+      "bonus": "bandeau"
+    },
+    {
+      "id": "mot008",
+      "actif": true,
+      "niveau": 1,
+      "mot": "Lit",
+      "interdits": [
+        "dormir",
+        "oreiller",
+        "chambre"
+      ],
+      "bonus": "couverture"
+    },
+    {
+      "id": "mot009",
+      "actif": true,
+      "niveau": 1,
+      "mot": "Banane",
+      "interdits": [
+        "jaune",
+        "fruit",
+        "singe"
+      ],
+      "bonus": "éplucher"
+    },
+    {
+      "id": "mot010",
+      "actif": true,
+      "niveau": 1,
+      "mot": "Ballon",
+      "interdits": [
+        "foot",
+        "rond",
+        "gonfler"
+      ],
+      "bonus": "jouer"
+    },
+    {
+      "id": "mot011",
+      "actif": true,
+      "niveau": 1,
+      "mot": "Poule",
+      "interdits": [
+        "œuf",
+        "plume",
+        "poulailler"
+      ],
+      "bonus": "coq"
+    },
+    {
+      "id": "mot012",
+      "actif": true,
+      "niveau": 1,
+      "mot": "Pluie",
+      "interdits": [
+        "parapluie",
+        "eau",
+        "nuage"
+      ],
+      "bonus": "mouillé"
+    },
+    {
+      "id": "mot013",
+      "actif": true,
+      "niveau": 1,
+      "mot": "Chat",
+      "interdits": [
+        "miauler",
+        "souris",
+        "moustaches"
+      ],
+      "bonus": "ronronner"
+    },
+    {
+      "id": "mot014",
+      "actif": true,
+      "niveau": 1,
+      "mot": "École",
+      "interdits": [
+        "maîtresse",
+        "classe",
+        "élèves"
+      ],
+      "bonus": "cartable"
+    },
+    {
+      "id": "mot015",
+      "actif": true,
+      "niveau": 1,
+      "mot": "Dents",
+      "interdits": [
+        "brosse",
+        "bouche",
+        "dentiste"
+      ],
+      "bonus": "sourire"
+    },
+    {
+      "id": "mot016",
+      "actif": true,
+      "niveau": 1,
+      "mot": "Soleil",
+      "interdits": [
+        "chaud",
+        "jaune",
+        "ciel"
+      ],
+      "bonus": "lunettes"
+    },
+    {
+      "id": "mot017",
+      "actif": true,
+      "niveau": 1,
+      "mot": "Gâteau",
+      "interdits": [
+        "anniversaire",
+        "chocolat",
+        "bougies"
+      ],
+      "bonus": "dessert"
+    },
+    {
+      "id": "mot018",
+      "actif": true,
+      "niveau": 1,
+      "mot": "Voiture",
+      "interdits": [
+        "rouler",
+        "volant",
+        "roues"
+      ],
+      "bonus": "route"
+    },
+    {
+      "id": "mot019",
+      "actif": true,
+      "niveau": 2,
+      "mot": "Tour Eiffel",
+      "interdits": [
+        "Paris",
+        "tour",
+        "fer"
+      ],
+      "bonus": "monument"
+    },
+    {
+      "id": "mot020",
+      "actif": true,
+      "niveau": 2,
+      "mot": "Dentiste",
+      "interdits": [
+        "dents",
+        "docteur",
+        "carie"
+      ],
+      "bonus": "fauteuil"
+    },
+    {
+      "id": "mot021",
+      "actif": true,
+      "niveau": 2,
+      "mot": "Arc-en-ciel",
+      "interdits": [
+        "couleurs",
+        "pluie",
+        "soleil"
+      ],
+      "bonus": "ciel"
+    },
+    {
+      "id": "mot022",
+      "actif": true,
+      "niveau": 2,
+      "mot": "Vampire",
+      "interdits": [
+        "sang",
+        "dents",
+        "nuit"
+      ],
+      "bonus": "Dracula"
+    },
+    {
+      "id": "mot023",
+      "actif": true,
+      "niveau": 2,
+      "mot": "Cinéma",
+      "interdits": [
+        "film",
+        "écran",
+        "popcorn"
+      ],
+      "bonus": "salle"
+    },
+    {
+      "id": "mot024",
+      "actif": true,
+      "niveau": 2,
+      "mot": "Astronaute",
+      "interdits": [
+        "espace",
+        "fusée",
+        "Lune"
+      ],
+      "bonus": "combinaison"
+    },
+    {
+      "id": "mot025",
+      "actif": true,
+      "niveau": 2,
+      "mot": "Anniversaire",
+      "interdits": [
+        "gâteau",
+        "bougies",
+        "âge"
+      ],
+      "bonus": "fête"
+    },
+    {
+      "id": "mot026",
+      "actif": true,
+      "niveau": 2,
+      "mot": "Volcan",
+      "interdits": [
+        "lave",
+        "montagne",
+        "éruption"
+      ],
+      "bonus": "feu"
+    },
+    {
+      "id": "mot027",
+      "actif": true,
+      "niveau": 2,
+      "mot": "Bibliothèque",
+      "interdits": [
+        "livres",
+        "emprunter",
+        "silence"
+      ],
+      "bonus": "lire"
+    },
+    {
+      "id": "mot028",
+      "actif": true,
+      "niveau": 2,
+      "mot": "Château fort",
+      "interdits": [
+        "roi",
+        "chevalier",
+        "pont-levis"
+      ],
+      "bonus": "murs"
+    },
+    {
+      "id": "mot029",
+      "actif": true,
+      "niveau": 2,
+      "mot": "Hérisson",
+      "interdits": [
+        "piquants",
+        "animal",
+        "boule"
+      ],
+      "bonus": "forêt"
+    },
+    {
+      "id": "mot030",
+      "actif": true,
+      "niveau": 2,
+      "mot": "Autoroute",
+      "interdits": [
+        "voiture",
+        "péage",
+        "vitesse"
+      ],
+      "bonus": "route"
+    },
+    {
+      "id": "mot031",
+      "actif": true,
+      "niveau": 2,
+      "mot": "Pompier",
+      "interdits": [
+        "feu",
+        "camion",
+        "sirène"
+      ],
+      "bonus": "éteindre"
+    },
+    {
+      "id": "mot032",
+      "actif": true,
+      "niveau": 2,
+      "mot": "Fantôme",
+      "interdits": [
+        "drap",
+        "peur",
+        "château"
+      ],
+      "bonus": "hanté"
+    },
+    {
+      "id": "mot033",
+      "actif": true,
+      "niveau": 2,
+      "mot": "Neige",
+      "interdits": [
+        "blanc",
+        "froid",
+        "hiver"
+      ],
+      "bonus": "bonhomme"
+    },
+    {
+      "id": "mot034",
+      "actif": true,
+      "niveau": 2,
+      "mot": "Camping",
+      "interdits": [
+        "tente",
+        "vacances",
+        "dormir"
+      ],
+      "bonus": "nature"
+    },
+    {
+      "id": "mot035",
+      "actif": true,
+      "niveau": 2,
+      "mot": "Magicien",
+      "interdits": [
+        "tour",
+        "chapeau",
+        "lapin"
+      ],
+      "bonus": "baguette"
+    },
+    {
+      "id": "mot036",
+      "actif": true,
+      "niveau": 2,
+      "mot": "Piscine",
+      "interdits": [
+        "nager",
+        "eau",
+        "maillot"
+      ],
+      "bonus": "plonger"
+    },
+    {
+      "id": "mot037",
+      "actif": true,
+      "niveau": 3,
+      "mot": "Wi-Fi",
+      "interdits": [
+        "Internet",
+        "connexion",
+        "box"
+      ],
+      "bonus": "réseau"
+    },
+    {
+      "id": "mot038",
+      "actif": true,
+      "niveau": 3,
+      "mot": "Ombre",
+      "interdits": [
+        "soleil",
+        "noir",
+        "lumière"
+      ],
+      "bonus": "suivre"
+    },
+    {
+      "id": "mot039",
+      "actif": true,
+      "niveau": 3,
+      "mot": "Écho",
+      "interdits": [
+        "répéter",
+        "montagne",
+        "voix"
+      ],
+      "bonus": "crier"
+    },
+    {
+      "id": "mot040",
+      "actif": true,
+      "niveau": 3,
+      "mot": "Rêve",
+      "interdits": [
+        "dormir",
+        "nuit",
+        "cauchemar"
+      ],
+      "bonus": "lit"
+    },
+    {
+      "id": "mot041",
+      "actif": true,
+      "niveau": 3,
+      "mot": "Mensonge",
+      "interdits": [
+        "vrai",
+        "Pinocchio",
+        "mentir"
+      ],
+      "bonus": "nez"
+    },
+    {
+      "id": "mot042",
+      "actif": true,
+      "niveau": 3,
+      "mot": "Hoquet",
+      "interdits": [
+        "boire",
+        "peur",
+        "hic"
+      ],
+      "bonus": "eau"
+    },
+    {
+      "id": "mot043",
+      "actif": true,
+      "niveau": 3,
+      "mot": "Selfie",
+      "interdits": [
+        "photo",
+        "téléphone",
+        "soi"
+      ],
+      "bonus": "visage"
+    },
+    {
+      "id": "mot044",
+      "actif": true,
+      "niveau": 3,
+      "mot": "Ennui",
+      "interdits": [
+        "rien",
+        "faire",
+        "long"
+      ],
+      "bonus": "bâiller"
+    },
+    {
+      "id": "mot045",
+      "actif": true,
+      "niveau": 3,
+      "mot": "Secret",
+      "interdits": [
+        "dire",
+        "cacher",
+        "chut"
+      ],
+      "bonus": "personne"
+    },
+    {
+      "id": "mot046",
+      "actif": true,
+      "niveau": 3,
+      "mot": "Embouteillage",
+      "interdits": [
+        "voitures",
+        "bouchon",
+        "attendre"
+      ],
+      "bonus": "route"
+    },
+    {
+      "id": "mot047",
+      "actif": true,
+      "niveau": 3,
+      "mot": "Gravité",
+      "interdits": [
+        "tomber",
+        "Newton",
+        "Terre"
+      ],
+      "bonus": "pomme"
+    },
+    {
+      "id": "mot048",
+      "actif": true,
+      "niveau": 3,
+      "mot": "Nostalgie",
+      "interdits": [
+        "passé",
+        "souvenir",
+        "triste"
+      ],
+      "bonus": "avant"
+    },
+    {
+      "id": "mot049",
+      "actif": true,
+      "niveau": 3,
+      "mot": "Courage",
+      "interdits": [
+        "peur",
+        "héros",
+        "oser"
+      ],
+      "bonus": "fort"
+    },
+    {
+      "id": "mot050",
+      "actif": true,
+      "niveau": 3,
+      "mot": "Silence",
+      "interdits": [
+        "bruit",
+        "chut",
+        "parler"
+      ],
+      "bonus": "calme"
+    },
+    {
+      "id": "mot051",
+      "actif": true,
+      "niveau": 3,
+      "mot": "Jalousie",
+      "interdits": [
+        "envie",
+        "vouloir",
+        "autre"
+      ],
+      "bonus": "vert"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+# pubspec.yaml — la « carte d'identité » du projet Flutter.
+# On y déclare : le nom, la version, les dépendances (paquets externes)
+# et les ressources embarquées (images, polices).
+# Après chaque modification : `flutter pub get`.
+
+name: en_route
+description: "Jeux d'ambiance pass and play pour la voiture"
+# Empêche de publier ce projet par erreur sur pub.dev (c'est une appli, pas un paquet).
+publish_to: 'none'
+
+# Version de l'appli : X.Y.Z+N
+#   X.Y.Z = version lisible (affichée dans « À propos »), N = numéro de build.
+#   Règle (CLAUDE.md §2) : correctif → Z+1 ; nouveauté → Y+1 ; N augmente TOUJOURS de 1.
+#   Sur Android : X.Y.Z devient versionName, N devient versionCode.
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.13.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Affiche les logos SV, qui sont au format SVG (Flutter ne lit pas le SVG tout seul).
+  flutter_svg: ^2.3.0
+  # Lit la version de l'appli (celle écrite plus haut) pour l'écran « À propos ».
+  # Évite de recopier le numéro à la main dans le code (et d'oublier de le changer).
+  package_info_plus: ^10.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # Règles de « bonnes pratiques » vérifiées par `flutter analyze`.
+  flutter_lints: ^6.0.0
+
+flutter:
+  # Donne accès aux icônes Material (Icons.info_outline, etc.).
+  uses-material-design: true
+
+  # Ressources embarquées dans l'appli (disponibles même sans réseau).
+  assets:
+    - assets/brand/
+
+  # Polices embarquées (téléchargées depuis Google Fonts, licence OFL dans assets/fonts/).
+  # On déclare chaque graisse (weight) pour que Flutter choisisse le bon fichier
+  # quand on écrit `fontWeight: FontWeight.w800` dans le code.
+  fonts:
+    - family: Manrope
+      fonts:
+        - asset: assets/fonts/Manrope-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Manrope-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Manrope-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Manrope-ExtraBold.ttf
+          weight: 800
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/JetBrainsMono-Bold.ttf
+          weight: 700

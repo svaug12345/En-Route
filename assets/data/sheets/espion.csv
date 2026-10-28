@@ -1,0 +1,33 @@
+﻿id,actif,niveau,emoji,lieu,roles
+esp001,oui,1,🏫,École,Maîtresse;Élève;Directeur;Dame de cantine;Gardien;Parent d'élève
+esp002,oui,1,🏊,Piscine,Maître-nageur;Nageur;Enfant avec des brassards;Vendeur de glaces;Plongeur
+esp003,oui,1,🦁,Zoo,Soigneur;Visiteur;Vendeur de ballons;Vétérinaire;Photographe
+esp004,oui,1,🏖️,Plage,Surveillant de baignade;Vendeur de beignets;Enfant qui fait un château;Surfeur;Touriste qui bronze
+esp005,oui,1,🛒,Supermarché,Caissier;Client pressé;Enfant qui veut des bonbons;Boucher;Livreur
+esp006,oui,1,🎬,Cinéma,Vendeur de popcorn;Spectateur;Projectionniste;Enfant qui a peur;Ouvreur
+esp007,oui,1,🥖,Boulangerie,Boulanger;Vendeuse;Client;Pâtissier;Livreur de farine
+esp008,oui,1,🐄,Ferme,"Fermier;Vache;Vétérinaire;Enfant en visite;Tracteur (oui, un tracteur)"
+esp009,oui,1,🎪,Cirque,Clown;Dompteur;Acrobate;Spectateur;Jongleur
+esp010,oui,1,🏴‍☠️,Bateau pirate,Capitaine;Moussaillon;Perroquet;Cuisinier;Prisonnier
+esp011,oui,1,🐔,Poulailler,Poule;Coq;Renard;Personne qui ramasse les œufs;Poussin
+esp012,oui,1,🎢,Parc d'attractions,Visiteur;Agent de manège;Mascotte;Vendeur de barbe à papa;Enfant trop petit
+esp013,oui,2,🏥,Hôpital,Médecin;Infirmière;Patient;Visiteur;Ambulancier
+esp014,oui,2,✈️,Aéroport,Pilote;Hôtesse de l'air;Douanier;Passager en retard;Bagagiste
+esp015,oui,2,📚,Bibliothèque,Bibliothécaire;Lecteur;Étudiant qui révise;Enfant à l'heure du conte;Livreur de livres
+esp016,oui,2,⛷️,Station de ski,Moniteur;Skieur débutant;Perchman;Secouriste;Vendeur de chocolat chaud
+esp017,oui,2,🏕️,Camping,Campeur;Gardien du camping;Animateur;Voisin qui ronfle;Enfant qui cherche des copains
+esp018,oui,2,🏰,Château fort,Roi;Chevalier;Bouffon;Garde;Princesse;Cuisinier
+esp019,oui,2,🚀,Fusée,Astronaute;Commandant;Ingénieur;Touriste spatial;Extraterrestre clandestin
+esp020,oui,2,🎡,Fête foraine,Forain;Visiteur;Gagnant de peluche;Vendeur de churros;Voyante
+esp021,oui,2,🚂,Train,Contrôleur;Conducteur;Passager;Vendeur au bar;Voyageur qui dort
+esp022,oui,2,🛣️,Aire d'autoroute,Caissier;Routier;Famille en vacances;Chien qui fait pipi;Agent d'entretien
+esp023,oui,2,⚽,Stade,Joueur;Arbitre;Supporter;Entraîneur;Vendeur de boissons
+esp024,oui,3,🏛️,Musée,Guide;Gardien;Visiteur;Restaurateur de tableaux;Voleur d'art
+esp025,oui,3,🚢,Sous-marin,Commandant;Opérateur sonar;Cuisinier;Mécanicien;Scientifique
+esp026,oui,3,🍽️,Restaurant chic,Chef;Serveur;Client exigeant;Sommelier;Plongeur
+esp027,oui,3,💒,Mariage,Mariée;Marié;Témoin;Photographe;Invité qui danse mal;DJ
+esp028,oui,3,🏨,Hôtel,Réceptionniste;Femme de chambre;Client;Groom;Chef cuisinier
+esp029,oui,3,🧪,Laboratoire,Scientifique;Stagiaire;Directeur;Souris de laboratoire;Inspecteur
+esp030,oui,3,🌋,Volcan,Volcanologue;Touriste;Guide;Journaliste;Photographe
+esp031,oui,3,🛰️,Station spatiale,Commandant;Astronaute;Médecin de bord;Ingénieur;Biologiste
+esp032,oui,3,🎭,Théâtre,Acteur;Metteur en scène;Spectateur;Souffleur;Costumière

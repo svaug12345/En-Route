@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "description": "L'Espion du trajet : lieux et rôles. niveau 1 = facile, 3 = difficile.",
+  "cartes": [
+    {
+      "id": "esp001",
+      "actif": true,
+      "niveau": 1,
+      "emoji": "🏫",
+      "lieu": "École",
+      "roles": [
+        "Maîtresse",
+        "Élève",
+        "Directeur",
+        "Dame de cantine",
+        "Gardien",
+        "Parent d'élève"
+      ]
+    },
+    {
+      "id": "esp002",
+      "actif": true,
+      "niveau": 1,
+      "emoji": "🏊",
+      "lieu": "Piscine",
+      "roles": [
+        "Maître-nageur",
+        "Nageur",
+        "Enfant avec des brassards",
+        "Vendeur de glaces",
+        "Plongeur"
+      ]
+    },
+    {
+      "id": "esp003",
+      "actif": true,
+      "niveau": 1,
+      "emoji": "🦁",
+      "lieu": "Zoo",
+      "roles": [
+        "Soigneur",
+        "Visiteur",
+        "Vendeur de ballons",
+        "Vétérinaire",
+        "Photographe"
+      ]
+    },
+    {
+      "id": "esp004",
+      "actif": true,
+      "niveau": 1,
+      "emoji": "🏖️",
+      "lieu": "Plage",
+      "roles": [
+        "Surveillant de baignade",
+        "Vendeur de beignets",
+        "Enfant qui fait un château",
+        "Surfeur",
+        "Touriste qui bronze"
+      ]
+    },
+    {
+      "id": "esp005",
+      "actif": true,
+      "niveau": 1,
+      "emoji": "🛒",
+      "lieu": "Supermarché",
+      "roles": [
+        "Caissier",
+        "Client pressé",
+        "Enfant qui veut des bonbons",
+        "Boucher",
+        "Livreur"
+      ]
+    },
+    {
+      "id": "esp006",
+      "actif": true,
+      "niveau": 1,
+      "emoji": "🎬",
+      "lieu": "Cinéma",
+      "roles": [
+        "Vendeur de popcorn",
+        "Spectateur",
+        "Projectionniste",
+        "Enfant qui a peur",
+        "Ouvreur"
+      ]
+    },
+    {
+      "id": "esp007",
+      "actif": true,
+      "niveau": 1,
+      "emoji": "🥖",
+      "lieu": "Boulangerie",
+      "roles": [
+        "Boulanger",
+        "Vendeuse",
+        "Client",
+        "Pâtissier",
+        "Livreur de farine"
+      ]
+    },
+    {
+      "id": "esp008",
+      "actif": true,
+      "niveau": 1,
+      "emoji": "🐄",
+      "lieu": "Ferme",
+      "roles": [
+        "Fermier",
+        "Vache",
+        "Vétérinaire",
+        "Enfant en visite",
+        "Tracteur (oui, un tracteur)"
+      ]
+    },
+    {
+      "id": "esp009",
+      "actif": true,
+      "niveau": 1,
+      "emoji": "🎪",
+      "lieu": "Cirque",
+      "roles": [
+        "Clown",
+        "Dompteur",
+        "Acrobate",
+        "Spectateur",
+        "Jongleur"
+      ]
+    },
+    {
+      "id": "esp010",
+      "actif": true,
+      "niveau": 1,
+      "emoji": "🏴‍☠️",
+      "lieu": "Bateau pirate",
+      "roles": [
+        "Capitaine",
+        "Moussaillon",
+        "Perroquet",
+        "Cuisinier",
+        "Prisonnier"
+      ]
+    },
+    {
+      "id": "esp011",
+      "actif": true,
+      "niveau": 1,
+      "emoji": "🐔",
+      "lieu": "Poulailler",
+      "roles": [
+        "Poule",
+        "Coq",
+        "Renard",
+        "Personne qui ramasse les œufs",
+        "Poussin"
+      ]
+    },
+    {
+      "id": "esp012",
+      "actif": true,
+      "niveau": 1,
+      "emoji": "🎢",
+      "lieu": "Parc d'attractions",
+      "roles": [
+        "Visiteur",
+        "Agent de manège",
+        "Mascotte",
+        "Vendeur de barbe à papa",
+        "Enfant trop petit"
+      ]
+    },
+    {
+      "id": "esp013",
+      "actif": true,
+      "niveau": 2,
+      "emoji": "🏥",
+      "lieu": "Hôpital",
+      "roles": [
+        "Médecin",
+        "Infirmière",
+        "Patient",
+        "Visiteur",
+        "Ambulancier"
+      ]
+    },
+    {
+      "id": "esp014",
+      "actif": true,
+      "niveau": 2,
+      "emoji": "✈️",
+      "lieu": "Aéroport",
+      "roles": [
+        "Pilote",
+        "Hôtesse de l'air",
+        "Douanier",
+        "Passager en retard",
+        "Bagagiste"
+      ]
+    },
+    {
+      "id": "esp015",
+      "actif": true,
+      "niveau": 2,
+      "emoji": "📚",
+      "lieu": "Bibliothèque",
+      "roles": [
+        "Bibliothécaire",
+        "Lecteur",
+        "Étudiant qui révise",
+        "Enfant à l'heure du conte",
+        "Livreur de livres"
+      ]
+    },
+    {
+      "id": "esp016",
+      "actif": true,
+      "niveau": 2,
+      "emoji": "⛷️",
+      "lieu": "Station de ski",
+      "roles": [
+        "Moniteur",
+        "Skieur débutant",
+        "Perchman",
+        "Secouriste",
+        "Vendeur de chocolat chaud"
+      ]
+    },
+    {
+      "id": "esp017",
+      "actif": true,
+      "niveau": 2,
+      "emoji": "🏕️",
+      "lieu": "Camping",
+      "roles": [
+        "Campeur",
+        "Gardien du camping",
+        "Animateur",
+        "Voisin qui ronfle",
+        "Enfant qui cherche des copains"
+      ]
+    },
+    {
+      "id": "esp018",
+      "actif": true,
+      "niveau": 2,
+      "emoji": "🏰",
+      "lieu": "Château fort",
+      "roles": [
+        "Roi",
+        "Chevalier",
+        "Bouffon",
+        "Garde",
+        "Princesse",
+        "Cuisinier"
+      ]
+    },
+    {
+      "id": "esp019",
+      "actif": true,
+      "niveau": 2,
+      "emoji": "🚀",
+      "lieu": "Fusée",
+      "roles": [
+        "Astronaute",
+        "Commandant",
+        "Ingénieur",
+        "Touriste spatial",
+        "Extraterrestre clandestin"
+      ]
+    },
+    {
+      "id": "esp020",
+      "actif": true,
+      "niveau": 2,
+      "emoji": "🎡",
+      "lieu": "Fête foraine",
+      "roles": [
+        "Forain",
+        "Visiteur",
+        "Gagnant de peluche",
+        "Vendeur de churros",
+        "Voyante"
+      ]
+    },
+    {
+      "id": "esp021",
+      "actif": true,
+      "niveau": 2,
+      "emoji": "🚂",
+      "lieu": "Train",
+      "roles": [
+        "Contrôleur",
+        "Conducteur",
+        "Passager",
+        "Vendeur au bar",
+        "Voyageur qui dort"
+      ]
+    },
+    {
+      "id": "esp022",
+      "actif": true,
+      "niveau": 2,
+      "emoji": "🛣️",
+      "lieu": "Aire d'autoroute",
+      "roles": [
+        "Caissier",
+        "Routier",
+        "Famille en vacances",
+        "Chien qui fait pipi",
+        "Agent d'entretien"
+      ]
+    },
+    {
+      "id": "esp023",
+      "actif": true,
+      "niveau": 2,
+      "emoji": "⚽",
+      "lieu": "Stade",
+      "roles": [
+        "Joueur",
+        "Arbitre",
+        "Supporter",
+        "Entraîneur",
+        "Vendeur de boissons"
+      ]
+    },
+    {
+      "id": "esp024",
+      "actif": true,
+      "niveau": 3,
+      "emoji": "🏛️",
+      "lieu": "Musée",
+      "roles": [
+        "Guide",
+        "Gardien",
+        "Visiteur",
+        "Restaurateur de tableaux",
+        "Voleur d'art"
+      ]
+    },
+    {
+      "id": "esp025",
+      "actif": true,
+      "niveau": 3,
+      "emoji": "🚢",
+      "lieu": "Sous-marin",
+      "roles": [
+        "Commandant",
+        "Opérateur sonar",
+        "Cuisinier",
+        "Mécanicien",
+        "Scientifique"
+      ]
+    },
+    {
+      "id": "esp026",
+      "actif": true,
+      "niveau": 3,
+      "emoji": "🍽️",
+      "lieu": "Restaurant chic",
+      "roles": [
+        "Chef",
+        "Serveur",
+        "Client exigeant",
+        "Sommelier",
+        "Plongeur"
+      ]
+    },
+    {
+      "id": "esp027",
+      "actif": true,
+      "niveau": 3,
+      "emoji": "💒",
+      "lieu": "Mariage",
+      "roles": [
+        "Mariée",
+        "Marié",
+        "Témoin",
+        "Photographe",
+        "Invité qui danse mal",
+        "DJ"
+      ]
+    },
+    {
+      "id": "esp028",
+      "actif": true,
+      "niveau": 3,
+      "emoji": "🏨",
+      "lieu": "Hôtel",
+      "roles": [
+        "Réceptionniste",
+        "Femme de chambre",
+        "Client",
+        "Groom",
+        "Chef cuisinier"
+      ]
+    },
+    {
+      "id": "esp029",
+      "actif": true,
+      "niveau": 3,
+      "emoji": "🧪",
+      "lieu": "Laboratoire",
+      "roles": [
+        "Scientifique",
+        "Stagiaire",
+        "Directeur",
+        "Souris de laboratoire",
+        "Inspecteur"
+      ]
+    },
+    {
+      "id": "esp030",
+      "actif": true,
+      "niveau": 3,
+      "emoji": "🌋",
+      "lieu": "Volcan",
+      "roles": [
+        "Volcanologue",
+        "Touriste",
+        "Guide",
+        "Journaliste",
+        "Photographe"
+      ]
+    },
+    {
+      "id": "esp031",
+      "actif": true,
+      "niveau": 3,
+      "emoji": "🛰️",
+      "lieu": "Station spatiale",
+      "roles": [
+        "Commandant",
+        "Astronaute",
+        "Médecin de bord",
+        "Ingénieur",
+        "Biologiste"
+      ]
+    },
+    {
+      "id": "esp032",
+      "actif": true,
+      "niveau": 3,
+      "emoji": "🎭",
+      "lieu": "Théâtre",
+      "roles": [
+        "Acteur",
+        "Metteur en scène",
+        "Spectateur",
+        "Souffleur",
+        "Costumière"
+      ]
+    }
+  ]
+}
