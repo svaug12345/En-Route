@@ -12,7 +12,7 @@ publish_to: 'none'
 #   X.Y.Z = version lisible (affichée dans « À propos »), N = numéro de build.
 #   Règle (CLAUDE.md §2) : correctif → Z+1 ; nouveauté → Y+1 ; N augmente TOUJOURS de 1.
 #   Sur Android : X.Y.Z devient versionName, N devient versionCode.
-version: 0.1.0+1
+version: 0.2.0+2
 
 environment:
   sdk: ^3.13.7
@@ -25,6 +25,11 @@ dependencies:
   # Lit la version de l'appli (celle écrite plus haut) pour l'écran « À propos ».
   # Évite de recopier le numéro à la main dans le code (et d'oublier de le changer).
   package_info_plus: ^10.2.2
+  # Partage l'état de l'appli (ex. la liste des joueurs) entre tous les écrans,
+  # et redessine automatiquement ceux qui l'affichent quand il change.
+  provider: ^6.1.5+1
+  # Petit stockage clé → valeur sur le téléphone : sert à sauvegarder les joueurs.
+  shared_preferences: ^2.5.6
 
 dev_dependencies:
   flutter_test:

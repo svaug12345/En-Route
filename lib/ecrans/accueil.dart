@@ -1,15 +1,22 @@
 // accueil.dart — l'écran d'accueil : une tuile par jeu du catalogue,
-// et un bouton (i) en haut à droite pour l'écran « À propos ».
+// et en haut à droite les boutons « Joueurs » et « À propos ».
 //
-// Plus tard (jalons 0.2.0 et 0.9.0) : accès aux joueurs et aux réglages.
+// Toucher une tuile → choisir qui joue → lancer le jeu.
+// Plus tard (jalon 0.9.0) : accès aux réglages.
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import '../jeux/catalogue.dart';
 import '../jeux/jeu.dart';
 import '../main.dart';
+import '../models/joueur.dart';
+import '../services/joueurs_service.dart';
 import '../theme/sv_theme.dart';
+import '../widgets/avatar_joueur.dart';
+import '../widgets/selection_joueurs.dart';
 import 'a_propos.dart';
+import 'joueurs.dart';
 
 /// Écran d'accueil.
 class Accueil extends StatelessWidget {
@@ -32,6 +39,14 @@ class Accueil extends StatelessWidget {
         title: const Text(nomAppli),
         actions: [
           IconButton(
+            tooltip: 'Joueurs',
+            icon: const Icon(Icons.group_outlined),
+            iconSize: 28,
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const EcranJoueurs()),
+            ),
+          ),
+          IconButton(
             tooltip: 'À propos',
             icon: const Icon(Icons.info_outline),
             iconSize: 28,
@@ -51,8 +66,13 @@ class Accueil extends StatelessWidget {
           separatorBuilder: (_, _) => const SizedBox(height: SvEspace.m),
           itemBuilder: (context, index) {
             if (index == 0) {
+              // Aucun joueur encore : on guide vers la création des joueurs.
+              final service = context.watch<JoueursService>();
+              final aucunJoueur = service.charge && service.joueurs.isEmpty;
               return Text(
-                'Choisis un jeu, puis passe le téléphone.',
+                aucunJoueur
+                    ? 'Commence par créer les joueurs avec le bouton en haut.'
+                    : 'Choisis un jeu, puis passe le téléphone.',
                 style: Theme.of(context).textTheme.titleMedium?.copyWith(
                       color: context.sv.inkMuted,
                     ),
@@ -73,18 +93,67 @@ class TuileJeu extends StatelessWidget {
 
   final Jeu jeu;
 
-  /// Appui sur la tuile : lance le jeu, ou explique qu'il arrive bientôt.
-  void _toucher(BuildContext context) {
+  /// Appui sur la tuile : on choisit les joueurs, puis on lance le jeu.
+  ///
+  /// Tant que le jeu n'est pas codé, on montre seulement l'ordre de passage
+  /// obtenu : ça permet déjà de tester la sélection des joueurs.
+  Future<void> _toucher(BuildContext context) async {
+    final joueurs = await SelectionJoueurs.ouvrir(context, jeu: jeu);
+    // null = retour arrière sans valider. `context.mounted` : l'écran
+    // d'accueil est-il toujours là après l'attente ?
+    if (joueurs == null || !context.mounted) return;
+
     if (jeu.disponible) {
-      Navigator.of(context).push(MaterialPageRoute(builder: jeu.ecran!));
+      Navigator.of(context).push(
+        MaterialPageRoute(builder: (_) => jeu.ecran!(joueurs)),
+      );
     } else {
-      // Un SnackBar est le petit message qui apparaît en bas de l'écran.
-      ScaffoldMessenger.of(context)
-        ..hideCurrentSnackBar() // Évite d'empiler les messages si on tape plusieurs fois.
-        ..showSnackBar(
-          SnackBar(content: Text('${jeu.nom} arrive bientôt.')),
-        );
+      _montrerOrdre(context, joueurs);
     }
+  }
+
+  /// Panneau qui monte du bas de l'écran (« bottom sheet ») avec l'ordre de passage.
+  void _montrerOrdre(BuildContext context, List<Joueur> joueurs) {
+    final texte = Theme.of(context).textTheme;
+    showModalBottomSheet<void>(
+      context: context,
+      showDragHandle: true,
+      builder: (context) => SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(SvEspace.l, 0, SvEspace.l, SvEspace.l),
+          child: Column(
+            mainAxisSize: MainAxisSize.min, // Le panneau prend juste la hauteur nécessaire.
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('Ordre de passage', style: texte.titleLarge),
+              const SizedBox(height: SvEspace.m),
+              // `indexed` donne chaque joueur avec son numéro (0, 1, 2…).
+              for (final (i, joueur) in joueurs.indexed)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: SvEspace.s),
+                  child: Row(
+                    children: [
+                      SizedBox(
+                        width: 32,
+                        child: Text('${i + 1}.',
+                            style: const TextStyle(fontFamily: SvPolice.chiffres, fontSize: 18)),
+                      ),
+                      AvatarJoueur(joueur: joueur, taille: 36),
+                      const SizedBox(width: SvEspace.m),
+                      Text(joueur.prenom, style: texte.titleMedium),
+                    ],
+                  ),
+                ),
+              const SizedBox(height: SvEspace.s),
+              Text(
+                '${jeu.nom} arrive bientôt.',
+                style: texte.bodyLarge?.copyWith(color: context.sv.inkMuted),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 
   @override

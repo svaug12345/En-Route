@@ -4,8 +4,10 @@
 // lui donne le thème SV (clair et sombre) et affiche l'écran d'accueil.
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import 'ecrans/accueil.dart';
+import 'services/joueurs_service.dart';
 import 'theme/sv_theme.dart';
 
 /// Nom affiché de l'appli. Pour le changer, modifier aussi `android:label`
@@ -15,7 +17,18 @@ const String nomAppli = 'En Route !';
 /// `main()` est la fonction que Dart appelle en premier.
 /// `runApp` prend le widget racine et le dessine à l'écran.
 void main() {
-  runApp(const EnRouteApp());
+  runApp(
+    // ChangeNotifierProvider « pose » le JoueursService tout en haut de l'appli :
+    // n'importe quel écran en dessous peut le retrouver avec
+    // context.watch<JoueursService>() ou context.read<JoueursService>().
+    // `..charger()` : on crée le service puis on lance tout de suite le
+    // chargement des joueurs sauvegardés (les `..` appellent une méthode
+    // sur l'objet et renvoient l'objet lui-même).
+    ChangeNotifierProvider(
+      create: (_) => JoueursService()..charger(),
+      child: const EnRouteApp(),
+    ),
+  );
 }
 
 /// Le widget racine de l'appli.

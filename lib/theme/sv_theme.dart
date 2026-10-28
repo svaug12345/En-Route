@@ -167,6 +167,62 @@ class SvPolice {
   static const String chiffres = 'JetBrainsMono';
 }
 
+/// Les couleurs des joueurs : une par joueur, pour le reconnaître d'un coup d'œil.
+///
+/// La charte n'a que 4 couleurs vives (teal, bleu, rouge, accent) : trop peu
+/// pour 8 joueurs. On garde donc teal, bleu et rouge de la charte, et on ajoute
+/// 5 teintes de même intensité. Chacune existe en version claire et sombre,
+/// comme le reste de la charte.
+///
+/// Un joueur enregistre seulement le *numéro* de sa couleur (0 à 7) : la vraie
+/// couleur est choisie au moment de dessiner, selon le thème.
+class SvCouleursJoueurs {
+  static const List<String> noms = [
+    'Teal', 'Bleu', 'Rouge', 'Orange', 'Violet', 'Vert', 'Rose', 'Ocre',
+  ];
+
+  static const List<Color> _clair = [
+    Color(0xFF0F7C7B), // teal (charte)
+    Color(0xFF1F5F8B), // bleu (charte)
+    Color(0xFFB23A34), // rouge = danger (charte)
+    Color(0xFFB85A14), // orange
+    Color(0xFF6B4FA0), // violet
+    Color(0xFF3D7D2F), // vert
+    Color(0xFFA83C73), // rose
+    Color(0xFF8A6D0F), // ocre
+  ];
+
+  static const List<Color> _sombre = [
+    Color(0xFF3CC2B8),
+    Color(0xFF6FB0DD),
+    Color(0xFFF0857F),
+    Color(0xFFF2A65A),
+    Color(0xFFB49BE6),
+    Color(0xFF8FD37A),
+    Color(0xFFEC8FC0),
+    Color(0xFFE8C95A),
+  ];
+
+  /// Nombre de couleurs disponibles.
+  static int get nombre => _clair.length;
+
+  /// La couleur n° [index] pour le thème actuel.
+  /// Le `%` (reste de la division) évite tout plantage si l'index est trop grand.
+  static Color couleur(BuildContext context, int index) {
+    final sombre = Theme.of(context).brightness == Brightness.dark;
+    final liste = sombre ? _sombre : _clair;
+    return liste[index % liste.length];
+  }
+
+  /// Couleur du texte posé sur une couleur de joueur (comme `onTeal`) :
+  /// blanc sur les couleurs foncées du thème clair, presque noir sur les
+  /// couleurs vives du thème sombre.
+  static Color texteSur(BuildContext context) =>
+      Theme.of(context).brightness == Brightness.dark
+          ? const Color(0xFF062022)
+          : const Color(0xFFFFFFFF);
+}
+
 /// Fabrique les deux thèmes de l'appli à partir des palettes.
 class SvTheme {
   static ThemeData get clair => _construire(SvCouleurs.clair, Brightness.light);

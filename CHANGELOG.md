@@ -3,6 +3,11 @@
 Format : une ligne par mise à jour, la plus récente en haut.
 Chaque modification de l'appli fait monter la version dans `pubspec.yaml` (voir CLAUDE.md §2).
 
+## [0.2.0+2] — 2026-10-28
+- Gestion des joueurs : créer, modifier, supprimer (prénom, couleur parmi 8, emoji ou initiale), sauvegardés sur le téléphone.
+- Sélection des joueurs avant une partie (minimum/maximum du jeu, ordre de passage mélangé ou non).
+- Accueil : bouton Joueurs ; toucher une tuile ouvre la sélection et montre l'ordre de passage (les jeux arrivent ensuite).
+
 ## [0.1.0+1] — 2026-10-28
 - Projet Flutter créé (Android, `com.svaug.en_route`, minSdk 24).
 - Thème SV clair et sombre (suit le réglage du téléphone), polices Manrope et JetBrains Mono embarquées.

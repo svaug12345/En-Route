@@ -6,6 +6,7 @@
 
 import 'package:flutter/widgets.dart';
 
+import '../models/joueur.dart';
 import '../theme/sv_theme.dart';
 
 /// Description d'un jeu du catalogue.
@@ -45,9 +46,10 @@ class Jeu {
   /// choisir la vraie couleur qu'au moment de dessiner, quand on connaît le thème.
   final Color Function(SvCouleurs c) couleur;
 
-  /// Construit l'écran du jeu. `null` tant que le jeu n'est pas encore codé :
-  /// la tuile s'affiche alors comme « bientôt » et n'est pas cliquable.
-  final WidgetBuilder? ecran;
+  /// Construit l'écran du jeu à partir des joueurs choisis (dans l'ordre de
+  /// passage). `null` tant que le jeu n'est pas encore codé : la tuile
+  /// s'affiche alors comme « bientôt ».
+  final Widget Function(List<Joueur> joueurs)? ecran;
 
   /// Vrai si le jeu peut être lancé.
   bool get disponible => ecran != null;
